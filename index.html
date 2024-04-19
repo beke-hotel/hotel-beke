@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <title>Hotel Beke</title>
+  <link rel="icon" type="image/x-icon" href="/assets/logo1.png">
+</head>
+
+<body>
+  <nav>
+    <div class="nav__bar">
+      <div class="nav__header">
+        <div class="logo nav__logo">
+          <!--<div>H</div>-->
+          <div class="header__logo-img-cont">
+            <img src="./assets/logo1.png" alt="Logo Image" class="header__logo-img" />
+          </div>
+          <span>HOTEL<br />BEKE</span>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a id="nav-home" href="#home">Home</a></li>
+        <li><a id="nav-about" href="#about">About</a></li>
+        <li><a id="nav-room" href="#room">Room</a></li>
+        <li><a id="nav-feature" href="#feature">Feature</a></li>
+        <li><a id="nav-menu" href="#menu">Menu</a></li>
+        <li><a id="nav-news" href="#news">News</a></li>
+        <select name="" id="">
+          <option value="en">English</option>
+          <option value="al">Albanian</option>
+          <option value="it">Italian</option>
+        </select>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="header" id="home">
+    <!-- ADDED FOR THE VIDEO -->
+    <video class="video-bg" autoplay muted loop>
+      <source src="assets/hotel-beke.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="section__container header__container">
+      <p class="section__subheader" id="about-us">ABOUT US</p>
+      <h1 id="title">Your Favourite<br />Place To Escape</h1>
+      <a class="btn" href="./index.html#about">Take A Tour</a>
+    </div>
+  </header>
+
+  <!-- 
+    <section class="booking">
+      <div class="section__container booking__container">
+        <form action="/">
+          <div class="input__group">
+            <label for="arrival">Arrival Date</label>
+            <input type="text" placeholder="Your Arrival Date" />
+          </div>
+          <div class="input__group">
+            <label for="departure">Departure Date</label>
+            <input type="text" placeholder="Your Departure Date" />
+          </div>
+          <div class="input__group">
+            <label for="guests">Guests</label>
+            <input type="text" placeholder="No Of Guests" />
+          </div>
+          <button class="btn">Check Availability</button>
+        </form>
+      </div>
+    </section>
+    -->
+
+  <section class="about" id="about">
+    <div class="section__container about__container">
+      <div class="about__grid">
+        <div class="about__image">
+          <img src="assets/about-1.jpg" alt="about" />
+        </div>
+        <div class="about__card">
+          <span><i class="ri-user-line"></i></span>
+          <h4 id="strong-team">Strong Team</h4>
+          <p id="strong-team-p">
+            Unlocking Hospitality Excellence And Ensures Your Perfect Stay
+          </p>
+        </div>
+        <div class="about__image">
+          <img src="assets/about-2.jpg" alt="about" />
+        </div>
+        <div class="about__card">
+          <span><i class="ri-calendar-check-line"></i></span>
+          <h4>Luxury Room</h4>
+          <p>Experience Unrivaled Luxury at Our Exquisite Luxury Rooms</p>
+        </div>
+      </div>
+      <div class="about__content">
+        <p class="section__subheader">ABOUT US</p>
+        <h2 class="section__header">Discover Our Underground</h2>
+        <p class="section__description">
+          Welcome to a hidden realm of extraordinary accommodations where
+          luxury, comfort, and adventure converge. Our underground hotels
+          offer an unparalleled escape from the ordinary, inviting you to
+          explore a subterranean world of wonders.
+        </p>
+        <button class="btn">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="room__container" id="room">
+    <p class="section__subheader">ROOMS</p>
+    <h2 class="section__header">Hand Picked Rooms</h2>
+    <div class="room__grid">
+      <div class="room__card">
+        <img src="assets/room-1.jpg" alt="room" />
+        <div class="room__card__details">
+          <div>
+            <h4>Deluxe Suite</h4>
+            <p>Well-appointed rooms designed for guests who desire a more.</p>
+          </div>
+          <h3>$399<span>/night</span></h3>
+        </div>
+      </div>
+      <div class="room__card">
+        <img src="assets/room-2.jpg" alt="room" />
+        <div class="room__card__details">
+          <div>
+            <h4>Family Suite</h4>
+            <p>Consist of multiple rooms and a common living area.</p>
+          </div>
+          <h3>$599<span>/night</span></h3>
+        </div>
+      </div>
+      <div class="room__card">
+        <img src="assets/room-3.jpg" alt="room" />
+        <div class="room__card__details">
+          <div>
+            <h4>Luxury Penthouse</h4>
+            <p>
+              Top-tier accommodations usually on the highest floors of a
+              hotel.
+            </p>
+          </div>
+          <h3>$799<span>/night</span></h3>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="intro">
+    <div class="section__container intro__container">
+      <div class="intro__cotent">
+        <p class="section__subheader">INTRO VIDEO</p>
+        <h2 class="section__header">Meet With Our Luxury Place</h2>
+        <p class="section__description">
+          Whether you're seeking a cozy and exclusive hideaway or an immersive
+          journey beneath the surface, Hotel Beke promises to be an
+          unforgettable stay, where the depths of comfort and excitement await
+          your arrival.
+        </p>
+        <button class="btn">Book Now</button>
+      </div>
+      <div class="intro__video">
+        <video src="assets/hotel-beke.mp4" autoplay muted loop></video>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container feature__container" id="feature">
+    <p class="section__subheader">SERVICES</p>
+    <h2 class="section__header">Core Features</h2>
+    <div class="feature__grid">
+      <div class="feature__card">
+        <span><i class="ri-thumb-up-line"></i></span>
+        <h4>Have High Rating</h4>
+        <p>
+          Proudly boasting high ratings from our valued guests.
+        </p>
+      </div>
+      <div class="feature__card">
+        <span><i class="ri-time-line"></i></span>
+        <h4>Quite Hours</h4>
+        <p>
+          We understand that peace and uninterrupted rest are essential for a
+          rejuvenating experience.
+        </p>
+      </div>
+      <div class="feature__card">
+        <span><i class="ri-map-pin-line"></i></span>
+        <h4>Prime Location</h4>
+        <p>
+          Discover unparalleled convenience at our hotel, strategically situated in
+          the most coveted and sought-after locales.
+        </p>
+      </div>
+      <div class="feature__card">
+        <span><i class="ri-close-circle-line"></i></span>
+        <h4>Free Cancellation</h4>
+        <p>
+          We understand that travel plans can change unexpectedly, which is
+          why we offer the flexibility of free cancellation.
+        </p>
+      </div>
+      <div class="feature__card">
+        <span><i class="ri-home-wifi-line"></i></i></span>
+        <h4>Free WI-FI</h4>
+        <p>
+          Free Wi-Fi in each corner of the property.
+        </p>
+      </div>
+      <!--
+      <div class="feature__card">
+        <span><i class="ri-wallet-line"></i></span>
+        <h4>Payment Options</h4>
+        <p>
+          Our hotel booking website offers a range of convenient payment
+          options to suit your preferences.
+        </p>
+      </div>
+      -->
+      <div class="feature__card">
+        <span><i class="ri-coupon-line"></i></span>
+        <h4>Special Offers</h4>
+        <p>
+          Indulge in our exclusive special offers tailored to suit every
+          occasion, whether it's a romantic escape or a productive business journey.
+        </p>
+      </div>
+      <div class="feature__card">
+        <span><i class="ri-24-hours-line"></i></span>
+        <h4>24/7 Service</h4>
+        <p>
+          Available at any time to cater to your needs.
+        </p>
+      </div>
+
+      <div class="feature__card">
+        <img src="assets/service6.png" alt="">
+        <h4>Free Beach</h4>
+        <p>
+          Free Private Beach.
+        </p>
+      </div>
+      <div class="feature__card">
+        <img src="assets/service2.png" alt="">
+        <h4>Breakfast Included</h4>
+        <p>
+          You can enjoy our brioche before going to the beach.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--
+  <section class="menu" id="menu">
+    <div class="section__container menu__container">
+      <div class="menu__header">
+        <div>
+          <p class="section__subheader">MENU</p>
+          <h2 class="section__header">Our Food Menu</h2>
+        </div>
+        <div class="section__nav">
+          <span><i class="ri-arrow-left-line"></i></span>
+          <span><i class="ri-arrow-right-line"></i></span>
+        </div>
+      </div>
+      <ul class="menu__items">
+        <li>
+          <img src="assets/menu-1.jpg" alt="menu" />
+          <div class="menu__details">
+            <h4>Fggs & Bacon</h4>
+            <p>
+              It is a culinary innovation that puts a unique spin on the
+              beloved breakfast combination.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="assets/menu-2.jpg" alt="menu" />
+          <div class="menu__details">
+            <h4>Tea or Coffee</h4>
+            <p>
+              A classic choice for your daily dose of comfort and calmness.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="assets/menu-3.jpg" alt="menu" />
+          <div class="menu__details">
+            <h4>Chia Oatmeal</h4>
+            <p>
+              Our Chia Oatmeal is a wholesome nutrient-packed breakfast
+              delight.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="assets/menu-4.jpg" alt="menu" />
+          <div class="menu__details">
+            <h4>Fruit Parfait</h4>
+            <p>
+              Our Fruit Parfait is a delightful culinary masterpiece of
+              freshness and flavor.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="assets/menu-5.jpg" alt="menu" />
+          <div class="menu__details">
+            <h4>Marmalade Selection</h4>
+            <p>
+              Our Marmalade Selection is a delectable medley of vibrant,
+              handcrafted citrus preserves.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="assets/menu-6.jpg" alt="menu" />
+          <div class="menu__details">
+            <h4>Cheese Plate</h4>
+            <p>
+              Our cheese plate is a masterpiece that celebrates rich and
+              diverse world of cheeses.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class="menu__images">
+        <img src="assets/menu-7.jpg" alt="menu" />
+        <img src="assets/menu-8.jpg" alt="menu" />
+        <img src="assets/menu-9.jpg" alt="menu" />
+      </div>
+      <ul class="menu__banner">
+        <li>
+          <span><i class="ri-file-text-line"></i></span>
+          <h4>84k</h4>
+          <p>Projects are Completed</p>
+        </li>
+        <li>
+          <span><i class="ri-user-line"></i></span>
+          <h4>10M</h4>
+          <p>Active Around World</p>
+        </li>
+        <li>
+          <span><i class="ri-function-line"></i></span>
+          <h4>02k</h4>
+          <p>Categories Served</p>
+        </li>
+        <li>
+          <span><i class="ri-lightbulb-flash-line"></i></span>
+          <h4>100M</h4>
+          <p>Ideas Raised Funds</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  -->
+
+  <!-- REVIEW SECTION-->
+
+  <!-- REVIEW SECTION -->
+  <section class="review" id="review">
+
+    <div class="swiper review-slider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide">
+          <h2 class="heading">client's review</h2>
+          <i class="fas fa-quote-right"></i>
+          <p>"Absolutely loved our stay at this hotel! From the stylish decor to the friendly staff, everything was
+            top-notch. The room was cozy and well-appointed, and the amenities exceeded our expectations. The location
+            was ideal, with plenty of dining options nearby. Can't wait to come back!"</p>
+          <div class="user">
+            <img src="assets/logo1.png" alt="">
+            <div class="user-info">
+              <h3>John</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <h2 class="heading">client's review</h2>
+          <i class="fas fa-quote-right"></i>
+          <p>"Our stay at this hotel was fantastic! The staff were friendly and attentive, the room was clean and
+            comfortable, and the location was perfect. We especially loved the complimentary amenities like the free
+            Wi-Fi and beach access. Highly recommend!"</p>
+          <div class="user">
+            <img src="assets/logo1.png" alt="">
+            <div class="user-info">
+              <h3>Chiara</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </section>
+
+  <section class="section__container news__container" id="news">
+    <div class="news__header">
+      <div>
+        <p class="section__subheader">BLOG</p>
+        <h2 class="section__header">News Feeds</h2>
+      </div>
+      <div class="section__nav">
+        <span><i class="ri-arrow-left-line"></i></span>
+        <span><i class="ri-arrow-right-line"></i></span>
+      </div>
+    </div>
+    <div class="news__grid">
+      <div class="news__card">
+        <img src="assets/news-1.jpg" alt="news" />
+        <div class="news__card__title">
+          <p>25th March 2022</p>
+          <p>By Emily</p>
+        </div>
+        <h4>Exploring Local Culinary Gems: A Foodie's Guide.</h4>
+        <p>
+          Join Emily as she takes you on a gastronomic adventure through the
+          neighborhood surrounding our hotel.
+        </p>
+      </div>
+      <div class="news__card">
+        <img src="assets/news-2.jpg" alt="news" />
+        <div class="news__card__title">
+          <p>15th June 2022</p>
+          <p>By David</p>
+        </div>
+        <h4>Balancing Mind, Body, and Soul at Our Hotel.</h4>
+        <p>
+          Discover holistic spa treatments, fitness facilities, and
+          mindfulness practices that will leave you feeling refreshed.
+        </p>
+      </div>
+      <div class="news__card">
+        <img src="assets/news-3.jpg" alt="news" />
+        <div class="news__card__title">
+          <p>08th August 2022</p>
+          <p>By Sarah</p>
+        </div>
+        <h4>Exploring Outdoor Activities Near Our Hotel.</h4>
+        <p>
+          From hiking and biking trails to water sports and wildlife
+          encounters, she highlights ways to experience nature's wonders.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section class="reservation">
+    <div class="section__container">
+      <div class="reservation__header">
+        <div>
+          <p class="section__subheader">Book Now</p>
+          <h2 class="section__header">Check Availability</h2>
+        </div>
+
+        <form action="">
+          <div class="container">
+            <div class="box">
+              <p>Name <span>*</span></p>
+              <input type="text" class="input" placeholder="Your Name">
+            </div>
+            <div class="box">
+              <p>Email <span>*</span></p>
+              <input type="text" class="input" placeholder="Your Email">
+            </div>
+            <div class="box">
+              <p>Check In <span>*</span></p>
+              <input type="date" class="input">
+            </div>
+            <div class="box">
+              <p>Check Out <span>*</span></p>
+              <input type="date" class="input">
+            </div>
+            <div class="box">
+              <p>Adults <span>*</span></p>
+              <select name="adults" class="input">
+                <option value="1">1 Adults</option>
+                <option value="2">2 Adults</option>
+                <option value="3">3 Adults</option>
+                <option value="4">4 Adults</option>
+                <option value="5">5 Adults</option>
+                <option value="6">6 Adults</option>
+              </select>
+            </div>
+            <div class="box">
+              <p>Children <span>*</span></p>
+              <select name="child" class="input">
+                <option value="1">1 Child</option>
+                <option value="2">2 Child</option>
+                <option value="3">3 Child</option>
+                <option value="4">4 Child</option>
+                <option value="5">5 Child</option>
+                <option value="6">6 Child</option>
+              </select>
+            </div>
+            <div class="box">
+              <p>Rooms <span>*</span></p>
+              <select name="rooms" class="input">
+                <option value="1">1 Rooms</option>
+                <option value="2">2 Rooms</option>
+                <option value="3">3 Rooms</option>
+                <option value="4">4 Rooms</option>
+                <option value="5">5 Rooms</option>
+                <option value="6">6 Rooms</option>
+              </select>
+            </div>
+            <div class="box">
+              <p>Room Type <span>*</span></p>
+              <select name="type" class="input">
+                <option value="1">Exclusive Rooms</option>
+                <option value="2">Family Rooms</option>
+                <option value="3">Daily Rooms</option>
+                <option value="4">Panoramic Rooms</option>
+              </select>
+            </div>
+          </div>
+          <input type="submit" value="Check Availability" class="btn">
+        </form>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="logo footer__logo">
+          <div class="header__logo-img-cont">
+            <img src="./assets/logo1.png" alt="Logo Image" class="header__logo-img" />
+          </div>
+          <span>HOTEL<br />BEKE</span>
+        </div>
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11981.671207606438!2d19.8369595!3d41.3432717!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350319ad82fa597%3A0x1af181c6fc7fe90a!2sShkolla%20e%20Bashkuar!5e0!3m2!1sen!2sit!4v1695547938782!5m2!1sen!2sit"
+          allowfullscreen="" loading="lazy">
+        </iframe>
+        <!-- 
+          <p class="section__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            laudantium unde. Doloremque eaque debitis laborum labore voluptates
+            iste molestiae consectetur.
+          </p>
+          -->
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/hotel_beke/" target="_blank"><i class="ri-instagram-line"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://www.booking.com/Share-GIVH2h" target="_blank"><i class="ri-blogger-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Services</h4>
+        <div class="footer__links">
+          <li><a href="#">Online Booking</a></li>
+          <li><a href="#">Room Customization</a></li>
+          <li><a href="#">Virtual Tours</a></li>
+          <li><a href="#">Special Offers</a></li>
+          <li><a href="#">Concierge Services</a></li>
+          <li><a href="#">Customer Support</a></li>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Contact Us</h4>
+        <div class="footer__links">
+          <li>
+            <span><i class="ri-phone-fill"></i></span>
+            <div>
+              <h5>Phone Number</h5>
+              <p>+355 69 696 6244</p>
+            </div>
+          </li>
+          <li>
+            <span><i class="ri-record-mail-line"></i></span>
+            <div>
+              <h5>Email</h5>
+              <p>hotelbeke@gmail.com</p>
+            </div>
+          </li>
+          <li>
+            <span><i class="ri-map-pin-2-fill"></i></span>
+            <div>
+              <h5>Location</h5>
+              <p>Rruga Kanan Maze, Vlorë, Albania 9401
+              </p>
+            </div>
+          </li>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Kakami. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
