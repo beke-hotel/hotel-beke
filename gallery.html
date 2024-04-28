@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <title>Hotel Beke</title>
+  <link rel="icon" type="image/x-icon" href="./assets/logo1.png">
+</head>
+
+<body>
+  <nav>
+    <div class="nav__bar">
+      <div class="nav__header">
+        <div class="logo nav__logo">
+          <!--<div>H</div>-->
+          <div class="header__logo-img-cont">
+            <img src="./assets/logo1.png" alt="Logo Image" class="header__logo-img" />
+          </div>
+          <span>HOTEL<br />BEKE</span>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a id="nav-home" href="./index.html#home">Home</a></li>
+        <li><a id="nav-about" href="./index.html#about">About</a></li>
+        <li><a id="nav-room" href="./index.html#room">Rooms</a></li>
+        <li><a id="nav-gallery" href="#">Gallery</a></li>
+        <li><a id="nav-feature" href="./index.html#feature">Feature</a></li>
+        <li><a id="nav-menu" href="./index.html#menu">Menu</a></li>
+        <li><a id="nav-news" href="./index.html#news">News</a></li>
+        <select name="" id="">
+          <option value="en">English</option>
+          <option value="al">Albanian</option>
+          <option value="it">Italian</option>
+        </select>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="header" id="home">
+    <div class="section__container header__container">
+      <p class="section__subheader" id="about-us">GALLERY</p>
+      <h1 id="title">Find Out<br />More</h1>
+    </div>
+  </header>
+
+  <!-- GALLERY -->
+  <section class="gallery__container">
+    <h2 class="section__header">Photo Gallery</h2>
+    <div class="gallery__grid" id="gallery">
+      <!--
+      <div class="gallery__card">
+        <img src="assets/room-1.jpg" alt="room" />
+      </div>
+      <div class="gallery__card">
+        <img src="assets/room-2.jpg" alt="room" />
+      </div>
+      -->
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="logo footer__logo">
+          <div class="header__logo-img-cont">
+            <img src="./assets/logo1.png" alt="Logo Image" class="header__logo-img" />
+          </div>
+          <span>HOTEL<br />BEKE</span>
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.526923724342!2d19.462253476013284!3d40.463606471432115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134531f8ee51d651%3A0x2238359e482e4bd8!2sHotel%20Beke!5e0!3m2!1sen!2sit!4v1714224948138!5m2!1sen!2sit"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/hotel_beke/" target="_blank"><i class="ri-instagram-line"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://www.booking.com/Share-GIVH2h" target="_blank"><i class="ri-blogger-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Services</h4>
+        <div class="footer__links">
+          <li><a href="#">Online Booking</a></li>
+          <li><a href="#">Room Customization</a></li>
+          <li><a href="#">Virtual Tours</a></li>
+          <li><a href="#">Special Offers</a></li>
+          <li><a href="#">Concierge Services</a></li>
+          <li><a href="#">Customer Support</a></li>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Contact Us</h4>
+        <div class="footer__links">
+          <li>
+            <span><i class="ri-phone-fill"></i></span>
+            <div>
+              <h5>Phone Number</h5>
+              <p>+355 69 696 6244</p>
+            </div>
+          </li>
+          <li>
+            <span><i class="ri-record-mail-line"></i></span>
+            <div>
+              <h5>Email</h5>
+              <p>hotelbeke@gmail.com</p>
+            </div>
+          </li>
+          <li>
+            <span><i class="ri-map-pin-2-fill"></i></span>
+            <div>
+              <h5>Location</h5>
+              <p>Rruga Kanan Maze, Vlorë, Albania 9401
+              </p>
+            </div>
+          </li>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Kakami. All rights reserved.
+    </div>
+  </footer>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const galleryGrid = document.getElementById('gallery');
+
+      const startNumber = 3;
+      const endNumber = 166;
+      const imageFiles = [];
+
+      for (let i = startNumber; i <= endNumber; i++) {
+        const fileName = `photo-${i}.jpg`;
+        imageFiles.push(fileName);
+      }
+
+      imageFiles.forEach(fileName => {
+
+        const galleryCard = document.createElement('div');
+        galleryCard.className = 'gallery__card';
+
+        const img = document.createElement('img');
+        img.src = `album/${fileName}`;
+        img.alt = 'room';
+
+        galleryCard.appendChild(img);
+
+        galleryGrid.appendChild(galleryCard);
+      });
+    });
+
+    const menuBtn = document.getElementById("menu-btn");
+    const navLinks = document.getElementById("nav-links");
+    const menuBtnIcon = menuBtn.querySelector("i");
+
+    menuBtn.addEventListener("click", (e) => {
+      navLinks.classList.toggle("open");
+
+      const isOpen = navLinks.classList.contains("open");
+      menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+    });
+
+    navLinks.addEventListener("click", (e) => {
+      navLinks.classList.remove("open");
+      menuBtnIcon.setAttribute("class", "ri-menu-line");
+    });
+  </script>
+</body>
+
+</html>

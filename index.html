@@ -32,9 +32,10 @@
       <ul class="nav__links" id="nav-links">
         <li><a id="nav-home" href="#home">Home</a></li>
         <li><a id="nav-about" href="#about">About</a></li>
-        <li><a id="nav-room" href="#room">Room</a></li>
+        <li><a id="nav-room" href="#room">Rooms</a></li>
+        <li><a id="nav-gallery" href="./gallery.html">Gallery</a></li>
         <li><a id="nav-feature" href="#feature">Feature</a></li>
-        <li><a id="nav-menu" href="#menu">Menu</a></li>
+        <li><a id="nav-menu" href="#reservation">Book</a></li>
         <li><a id="nav-news" href="#news">News</a></li>
         <select name="" id="">
           <option value="en">English</option>
@@ -49,7 +50,7 @@
     <div class="section__container header__container">
       <p class="section__subheader" id="about-us">ABOUT US</p>
       <h1 id="title">Your Favourite<br />Place To Escape</h1>
-      <a class="btn" href="./index.html#about">Take A Tour</a>
+      <a class="btn" href="#about">Take A Tour</a>
     </div>
   </header>
 
@@ -83,9 +84,10 @@
         </div>
         <div class="about__card">
           <span><i class="ri-user-line"></i></span>
-          <h4 id="strong-team">Strong Team</h4>
+          <h4 id="strong-team">Expert Hospitality Team</h4>
           <p id="strong-team-p">
-            Unlocking Hospitality Excellence And Ensures Your Perfect Stay
+            Our dedicated team is committed to unlocking excellence in hospitality, ensuring your stay at Hotel Beke is
+            nothing short of perfection.
           </p>
         </div>
         <div class="about__image">
@@ -93,36 +95,41 @@
         </div>
         <div class="about__card">
           <span><i class="ri-calendar-check-line"></i></span>
-          <h4>Luxury Room</h4>
-          <p>Experience Unrivaled Luxury at Our Exquisite Luxury Rooms</p>
+          <h4>Luxury Accommodation</h4>
+          <p>Indulge in unrivaled luxury at our exquisite accommodations, designed to elevate your stay to new heights
+            of comfort and style.</p>
         </div>
       </div>
       <div class="about__content">
         <p class="section__subheader">ABOUT US</p>
-        <h2 class="section__header">Discover Our Underground</h2>
+        <h2 class="section__header">Explore Our Location</h2>
         <p class="section__description">
-          Welcome to a hidden realm of extraordinary accommodations where
-          luxury, comfort, and adventure converge. Our underground hotels
-          offer an unparalleled escape from the ordinary, inviting you to
-          explore a subterranean world of wonders.
+          Welcome to Hotel Beke, ideally located just 250 meters from Vlore Beach in the picturesque city of Vlore. Our
+          4-star hotel offers comfortable accommodation with the convenience of free private parking.
+
+          Guests staying at Hotel Beke can enjoy access to our 24-hour bar and exclusive beach zone throughout their
+          stay. Nestled amidst serene natural surroundings, our hotel boasts a breathtaking view, making it the perfect
+          retreat for relaxation and tranquility.
+
+          Experience the beauty of Vlore from the comfort of Hotel Beke, where nature meets hospitality.
         </p>
-        <button class="btn">Book Now</button>
+        <a class="btn" href="#reservation">Check Availability</a>
       </div>
     </div>
   </section>
 
   <section class="room__container" id="room">
     <p class="section__subheader">ROOMS</p>
-    <h2 class="section__header">Hand Picked Rooms</h2>
+    <h2 class="section__header">Exclusive Room Choices</h2>
     <div class="room__grid">
       <div class="room__card">
         <img src="assets/room-1.jpg" alt="room" />
         <div class="room__card__details">
           <div>
             <h4>Deluxe Suite</h4>
-            <p>Well-appointed rooms designed for guests who desire a more.</p>
+            <p>Indulge in our well-appointed Deluxe Suites, designed for guests seeking refined luxury and comfort.</p>
           </div>
-          <h3>$399<span>/night</span></h3>
+          <h3>€50 - €70<span>/night</span></h3>
         </div>
       </div>
       <div class="room__card">
@@ -130,11 +137,14 @@
         <div class="room__card__details">
           <div>
             <h4>Family Suite</h4>
-            <p>Consist of multiple rooms and a common living area.</p>
+            <p>Our spacious Family Suite features three comfortable beds, ideal for families or groups looking for a
+              larger room to accommodate multiple guests. Enjoy ample space and comfort during your stay in our Family
+              Suite.</p>
           </div>
-          <h3>$599<span>/night</span></h3>
+          <h3>€60 - €100<span>/night</span></h3>
         </div>
       </div>
+      <!-- 
       <div class="room__card">
         <img src="assets/room-3.jpg" alt="room" />
         <div class="room__card__details">
@@ -148,7 +158,7 @@
           <h3>$799<span>/night</span></h3>
         </div>
       </div>
-
+      -->
     </div>
 
   </section>
@@ -157,22 +167,21 @@
     <div class="section__container intro__container">
       <div class="intro__cotent">
         <p class="section__subheader">INTRO VIDEO</p>
-        <h2 class="section__header">Meet With Our Luxury Place</h2>
+        <h2 class="section__header">Discover Our Luxury Destination</h2>
         <p class="section__description">
-          Whether you're seeking a cozy and exclusive hideaway or an immersive
-          journey beneath the surface, Hotel Beke promises to be an
-          unforgettable stay, where the depths of comfort and excitement await
-          your arrival.
+          Whether you're seeking an intimate and exclusive retreat or a captivating
+          adventure, Hotel Beke promises an unforgettable experience where comfort
+          and excitement converge to create lasting memories.
         </p>
-        <button class="btn">Book Now</button>
+        <a class="btn" href="#reservation">Check Availability</a>
       </div>
       <div class="intro__video">
         <video class="video-bg" autoplay muted loop>
-          <source src="https://github.com/beke-hotel/hotel-beke/blob/main/assets/hotel-beke.mp4?raw=true" type="video/mp4"> 
-          <!-- <source src="./assets/hotel-beke.mp4" type="video/mp4"> -->
+          <!-- <source src="https://github.com/beke-hotel/hotel-beke/blob/main/assets/hotel-beke.mp4?raw=true" type="video/mp4"> -->
+          <source src="./assets/hotel-beke.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-        
+
       </div>
     </div>
   </section>
@@ -183,40 +192,40 @@
     <div class="feature__grid">
       <div class="feature__card">
         <span><i class="ri-thumb-up-line"></i></span>
-        <h4>Have High Rating</h4>
+        <h4>Top-Rated by Our Guests</h4>
         <p>
-          Proudly boasting high ratings from our valued guests.
+          Proud to be consistently rated highly by our valued guests, reflecting our commitment to
+          exceptional service and guest satisfaction.
         </p>
       </div>
       <div class="feature__card">
         <span><i class="ri-time-line"></i></span>
         <h4>Quite Hours</h4>
         <p>
-          We understand that peace and uninterrupted rest are essential for a
-          rejuvenating experience.
+          At Hotel Beke, we prioritize peace and uninterrupted rest to ensure a rejuvenating experience for our guests.
         </p>
       </div>
       <div class="feature__card">
         <span><i class="ri-map-pin-line"></i></span>
         <h4>Prime Location</h4>
         <p>
-          Discover unparalleled convenience at our hotel, strategically situated in
-          the most coveted and sought-after locales.
+          Experience unparalleled convenience at Hotel Beke, strategically situated in one of the most coveted and
+          sought-after locales.
         </p>
       </div>
       <div class="feature__card">
         <span><i class="ri-close-circle-line"></i></span>
         <h4>Free Cancellation</h4>
         <p>
-          We understand that travel plans can change unexpectedly, which is
-          why we offer the flexibility of free cancellation.
+          njoy peace of mind knowing that we offer the flexibility of free cancellation, recognizing that travel plans
+          can change unexpectedly.
         </p>
       </div>
       <div class="feature__card">
         <span><i class="ri-home-wifi-line"></i></i></span>
         <h4>Free WI-FI</h4>
         <p>
-          Free Wi-Fi in each corner of the property.
+          Stay connected with complimentary Wi-Fi available throughout our property.
         </p>
       </div>
       <!--
@@ -233,30 +242,39 @@
         <span><i class="ri-coupon-line"></i></span>
         <h4>Special Offers</h4>
         <p>
-          Indulge in our exclusive special offers tailored to suit every
-          occasion, whether it's a romantic escape or a productive business journey.
+          Discover our exclusive special offers crafted to enhance every occasion, whether you're planning a romantic
+          escape or a productive business trip.
         </p>
       </div>
       <div class="feature__card">
         <span><i class="ri-24-hours-line"></i></span>
         <h4>24/7 Service</h4>
         <p>
-          Available at any time to cater to your needs.
+          Our dedicated team is available around the clock to cater to your needs, ensuring exceptional service at any
+          time.
+        </p>
+      </div>
+      <div class="feature__card">
+        <span><i class="ri-parking-box-fill"></i></span>
+        <h4>Free Parking</h4>
+        <p>
+          Enjoy the convenience of complimentary parking available at all times during your stay.
         </p>
       </div>
 
       <div class="feature__card">
         <img src="assets/service6.png" alt="">
-        <h4>Free Beach</h4>
-        <p>
-          Free Private Beach.
-        </p>
+        <h4>Private Beach Access</h4>
+          <p>
+            Enjoy access to our private beach during your stay.
+          </p>
       </div>
       <div class="feature__card">
         <img src="assets/service2.png" alt="">
         <h4>Breakfast Included</h4>
         <p>
-          You can enjoy our brioche before going to the beach.
+          Start your day right with a delicious breakfast featuring our freshly baked brioche, perfect before heading to
+          the beach.
         </p>
       </div>
     </div>
@@ -367,8 +385,6 @@
   </section>
   -->
 
-  <!-- REVIEW SECTION-->
-
   <!-- REVIEW SECTION -->
   <section class="review" id="review">
 
@@ -403,7 +419,7 @@
             comfortable, and the location was perfect. We especially loved the complimentary amenities like the free
             Wi-Fi and beach access. Highly recommend!"</p>
           <div class="user">
-            <img src="assets/logo1.png" alt="">
+            <!-- <img src="assets/logo1.png" alt=""> -->
             <div class="user-info">
               <h3>Chiara</h3>
               <div class="stars">
@@ -438,7 +454,7 @@
       <div class="news__card">
         <img src="assets/news-1.jpg" alt="news" />
         <div class="news__card__title">
-          <p>25th March 2022</p>
+          <p>25th March 2024</p>
           <p>By Emily</p>
         </div>
         <h4>Exploring Local Culinary Gems: A Foodie's Guide.</h4>
@@ -450,7 +466,7 @@
       <div class="news__card">
         <img src="assets/news-2.jpg" alt="news" />
         <div class="news__card__title">
-          <p>15th June 2022</p>
+          <p>15th June 2024</p>
           <p>By David</p>
         </div>
         <h4>Balancing Mind, Body, and Soul at Our Hotel.</h4>
@@ -462,7 +478,7 @@
       <div class="news__card">
         <img src="assets/news-3.jpg" alt="news" />
         <div class="news__card__title">
-          <p>08th August 2022</p>
+          <p>08th August 2024</p>
           <p>By Sarah</p>
         </div>
         <h4>Exploring Outdoor Activities Near Our Hotel.</h4>
@@ -475,7 +491,7 @@
   </section>
 
   <!-- RESERVATION -->
-  <section class="reservation">
+  <section class="reservation" id="reservation">
     <div class="section__container">
       <div class="reservation__header">
         <div>
@@ -515,6 +531,7 @@
             <div class="box">
               <p>Children <span>*</span></p>
               <select name="child" class="input">
+                <option value="1">0 Child</option>
                 <option value="1">1 Child</option>
                 <option value="2">2 Child</option>
                 <option value="3">3 Child</option>
@@ -537,10 +554,12 @@
             <div class="box">
               <p>Room Type <span>*</span></p>
               <select name="type" class="input">
-                <option value="1">Exclusive Rooms</option>
-                <option value="2">Family Rooms</option>
+                <option value="1">Deluxe Suite</option>
+                <option value="2">Family Suite</option>
+                <!-- 
                 <option value="3">Daily Rooms</option>
                 <option value="4">Panoramic Rooms</option>
+                -->
               </select>
             </div>
           </div>
@@ -562,9 +581,10 @@
           </div>
           <span>HOTEL<br />BEKE</span>
         </div>
-        <iframe class="map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11981.671207606438!2d19.8369595!3d41.3432717!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350319ad82fa597%3A0x1af181c6fc7fe90a!2sShkolla%20e%20Bashkuar!5e0!3m2!1sen!2sit!4v1695547938782!5m2!1sen!2sit"
-          allowfullscreen="" loading="lazy">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.526923724342!2d19.462253476013284!3d40.463606471432115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134531f8ee51d651%3A0x2238359e482e4bd8!2sHotel%20Beke!5e0!3m2!1sen!2sit!4v1714224948138!5m2!1sen!2sit"
+          style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
         </iframe>
         <!-- 
           <p class="section__description">
