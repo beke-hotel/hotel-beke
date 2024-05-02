@@ -635,6 +635,13 @@ select::-webkit-scrollbar {
   background-color: var(--secondary-color);
 }
 
+.footer__col  {
+  flex: 1 1 50%; /* Adjust the width of each column */
+  padding: 30px; /* Add padding to create spacing between elements */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+
+}
+
 .footer__col h4 {
   margin-bottom: 2rem;
   font-size: 1.25rem;
@@ -886,9 +893,6 @@ select::-webkit-scrollbar {
 }
 
 
-
-
-
 /* RESERVATION */
 
 .reservation__header {
@@ -896,32 +900,6 @@ select::-webkit-scrollbar {
   flex-direction: column;
   gap: 2rem;
 }
-
-.reservation form .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.reservation form .container .box {
-  flex: 1 1 40rem;
-}
-
-.reservation form .container .box p {
-  font-size: 1.2rem;
-  color: var(--primary);
-}
-
-.reservation form .container .box .input {
-  font-size: 1.2rem;
-  width: 100%;
-  padding: 1rem 0;
-  margin: 1rem 0;
-  border-bottom: .2rem solid rgba(0, 0, 0, 0.1);
-  color: var(--black);
-}
-
-/* RESERVATION */
 
 .reservation form {
   max-width: var(--max-width);
@@ -964,6 +942,26 @@ select::-webkit-scrollbar {
 
 .reservation form .container .box .input:focus {
   outline: none; /* Hide the focus outline if it's appearing */
+}
+
+.message__textarea {
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.message__textarea:focus {
+  outline: none; /* Hide the focus outline */
+  border-color: #0077b6; /* Change border color on focus */
+}
+
+.message__label {
+  font-size: 1.2rem;
+  color: #0077b6;
 }
 
 /* end */
@@ -1158,4 +1156,48 @@ select::-webkit-scrollbar {
   .gallery__grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
+}
+
+
+/* SPECIAL PRICE PARAGRAPH */
+.special_price {
+  font-size: 18px; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #ff6600; /* Set a custom text color (orange) */
+  text-align: center; /* Center-align the text */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #fff5e6; /* Light background color */
+  border: 2px solid #ff6600; /* Add a border with orange color */
+  border-radius: 10px; /* Rounded corners for the box */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.special_price::before {
+  content: "\2605"; /* Unicode character for a star */
+  margin-right: 5px; /* Add spacing between star and text */
+}
+
+.special_price::after {
+  content: "\2605"; /* Unicode character for a star */
+  margin-left: 5px; /* Add spacing between text and star */
+}
+
+
+.ri-instagram-line {
+  color: orange;
+}
+
+.ri-blogger-fill {
+  color: blue;
+}
+
+.ri-whatsapp-line {
+  color: green;
+}
+
+.ri-youtube-fill {
+  color: red;
+}
+.ri-facebook-fill {
+  color: skyblue;
 }

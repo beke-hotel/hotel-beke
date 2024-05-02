@@ -12,6 +12,14 @@
   <link rel="stylesheet" href="styles.css" />
   <title>Hotel Beke</title>
   <link rel="icon" type="image/x-icon" href="./assets/logo1.png">
+
+  <!-- EMAIL JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function() {
+          emailjs.init('MO7xvIDqV4CWzWXZY');
+      })();
+  </script>
 </head>
 
 <body>
@@ -38,9 +46,10 @@
         <li><a id="nav-menu" href="#reservation">Book</a></li>
         <li><a id="nav-news" href="#news">News</a></li>
         <select name="" id="">
+          <option value="" selected disabled hidden>Language</option>
           <option value="en">English</option>
-          <option value="al">Albanian</option>
-          <option value="it">Italian</option>
+          <option value="it">Italiano</option>
+          <option value="al">Shqip (Albanian)</option>
         </select>
       </ul>
     </div>
@@ -95,15 +104,15 @@
         </div>
         <div class="about__card">
           <span><i class="ri-calendar-check-line"></i></span>
-          <h4>Luxury Accommodation</h4>
-          <p>Indulge in unrivaled luxury at our exquisite accommodations, designed to elevate your stay to new heights
+          <h4 id="luxury-accomodation">Luxury Accommodation</h4>
+          <p id="luxury-accomodation-p">Indulge in unrivaled luxury at our exquisite accommodations, designed to elevate your stay to new heights
             of comfort and style.</p>
         </div>
       </div>
       <div class="about__content">
         <p class="section__subheader">ABOUT US</p>
-        <h2 class="section__header">Explore Our Location</h2>
-        <p class="section__description">
+        <h2 class="section__header" id="explore-our-location">Explore Our Location</h2>
+        <p class="section__description" id="explore-our-location-p">
           Welcome to Hotel Beke, ideally located just 250 meters from Vlore Beach in the picturesque city of Vlore. Our
           4-star hotel offers comfortable accommodation with the convenience of free private parking.
 
@@ -120,14 +129,14 @@
 
   <section class="room__container" id="room">
     <p class="section__subheader">ROOMS</p>
-    <h2 class="section__header">Exclusive Room Choices</h2>
+    <h2 class="section__header" id="exclusive-room-choices">Exclusive Room Choices</h2>
     <div class="room__grid">
       <div class="room__card">
         <img src="assets/room-1.jpg" alt="room" />
         <div class="room__card__details">
           <div>
-            <h4>Deluxe Suite</h4>
-            <p>Indulge in our well-appointed Deluxe Suites, designed for guests seeking refined luxury and comfort.</p>
+            <h4 id="deluxe-suits">Deluxe Suite</h4>
+            <p id="deluxe-suits-p">Indulge in our well-appointed Deluxe Suites, designed for guests seeking refined luxury and comfort.</p>
           </div>
           <h3>€50 - €70<span>/night</span></h3>
         </div>
@@ -136,8 +145,8 @@
         <img src="assets/room-2.jpg" alt="room" />
         <div class="room__card__details">
           <div>
-            <h4>Family Suite</h4>
-            <p>Our spacious Family Suite features three comfortable beds, ideal for families or groups looking for a
+            <h4 id="family-suite">Family Suite</h4>
+            <p id="family-suite-p">Our spacious Family Suite features three comfortable beds, ideal for families or groups looking for a
               larger room to accommodate multiple guests. Enjoy ample space and comfort during your stay in our Family
               Suite.</p>
           </div>
@@ -167,8 +176,8 @@
     <div class="section__container intro__container">
       <div class="intro__cotent">
         <p class="section__subheader">INTRO VIDEO</p>
-        <h2 class="section__header">Discover Our Luxury Destination</h2>
-        <p class="section__description">
+        <h2 class="section__header" id="intro-discover">Discover Our Luxury Destination</h2>
+        <p class="section__description" id="intro-discover-p">
           Whether you're seeking an intimate and exclusive retreat or a captivating
           adventure, Hotel Beke promises an unforgettable experience where comfort
           and excitement converge to create lasting memories.
@@ -177,8 +186,8 @@
       </div>
       <div class="intro__video">
         <video class="video-bg" autoplay muted loop>
-          <!-- <source src="https://github.com/beke-hotel/hotel-beke/blob/main/assets/hotel-beke.mp4?raw=true" type="video/mp4"> -->
-          <source src="./assets/hotel-beke.mp4" type="video/mp4">
+          <source src="https://github.com/beke-hotel/hotel-beke/blob/main/assets/hotel-beke.mp4?raw=true" type="video/mp4">
+          <!-- <source src="./assets/hotel-beke.mp4" type="video/mp4"> -->
           Your browser does not support the video tag.
         </video>
 
@@ -187,92 +196,82 @@
   </section>
 
   <section class="section__container feature__container" id="feature">
-    <p class="section__subheader">SERVICES</p>
-    <h2 class="section__header">Core Features</h2>
+    <p class="section__subheader" id="services">SERVICES</p>
+    <h2 class="section__header" id="core-features">Core Features</h2>
     <div class="feature__grid">
       <div class="feature__card">
         <span><i class="ri-thumb-up-line"></i></span>
-        <h4>Top-Rated by Our Guests</h4>
-        <p>
+        <h4 id="top-rated">Top-Rated by Our Guests</h4>
+        <p id="top-rated-p">
           Proud to be consistently rated highly by our valued guests, reflecting our commitment to
           exceptional service and guest satisfaction.
         </p>
       </div>
       <div class="feature__card">
         <span><i class="ri-time-line"></i></span>
-        <h4>Quite Hours</h4>
-        <p>
+        <h4 id="quite-hours">Quite Hours</h4>
+        <p id="quite-hours-p">
           At Hotel Beke, we prioritize peace and uninterrupted rest to ensure a rejuvenating experience for our guests.
         </p>
       </div>
       <div class="feature__card">
         <span><i class="ri-map-pin-line"></i></span>
-        <h4>Prime Location</h4>
-        <p>
+        <h4 id="prime-location">Prime Location</h4>
+        <p id="prime-location-p">
           Experience unparalleled convenience at Hotel Beke, strategically situated in one of the most coveted and
           sought-after locales.
         </p>
       </div>
       <div class="feature__card">
         <span><i class="ri-close-circle-line"></i></span>
-        <h4>Free Cancellation</h4>
-        <p>
-          njoy peace of mind knowing that we offer the flexibility of free cancellation, recognizing that travel plans
+        <h4 id="free-cancellation">Free Cancellation</h4>
+        <p id="free-cancellation-p">
+          Enjoy peace of mind knowing that we offer the flexibility of free cancellation, recognizing that travel plans
           can change unexpectedly.
         </p>
       </div>
       <div class="feature__card">
         <span><i class="ri-home-wifi-line"></i></i></span>
-        <h4>Free WI-FI</h4>
-        <p>
+        <h4 id="free-wifi">Free WI-FI</h4>
+        <p id="free-wifi-p">
           Stay connected with complimentary Wi-Fi available throughout our property.
         </p>
       </div>
-      <!--
-      <div class="feature__card">
-        <span><i class="ri-wallet-line"></i></span>
-        <h4>Payment Options</h4>
-        <p>
-          Our hotel booking website offers a range of convenient payment
-          options to suit your preferences.
-        </p>
-      </div>
-      -->
       <div class="feature__card">
         <span><i class="ri-coupon-line"></i></span>
-        <h4>Special Offers</h4>
-        <p>
+        <h4 id="special-offers">Special Offers</h4>
+        <p id="special-offers-p">
           Discover our exclusive special offers crafted to enhance every occasion, whether you're planning a romantic
           escape or a productive business trip.
         </p>
       </div>
       <div class="feature__card">
         <span><i class="ri-24-hours-line"></i></span>
-        <h4>24/7 Service</h4>
-        <p>
+        <h4 id="24-7">24/7 Service</h4>
+        <p id="24-7-p">
           Our dedicated team is available around the clock to cater to your needs, ensuring exceptional service at any
           time.
         </p>
       </div>
       <div class="feature__card">
         <span><i class="ri-parking-box-fill"></i></span>
-        <h4>Free Parking</h4>
-        <p>
+        <h4 id="free-parking">Free Parking</h4>
+        <p id="free-parking-p">
           Enjoy the convenience of complimentary parking available at all times during your stay.
         </p>
       </div>
 
       <div class="feature__card">
         <img src="assets/service6.png" alt="">
-        <h4>Private Beach Access</h4>
-          <p>
+        <h4 id="private-beach">Private Beach Access</h4>
+          <p id="private-beach-p">
             Enjoy access to our private beach during your stay.
           </p>
       </div>
       <div class="feature__card">
         <img src="assets/service2.png" alt="">
-        <h4>Breakfast Included</h4>
-        <p>
+        <h4 id="breakfast-included">Breakfast Included</h4>
+        <p id="breakfast-included-p">
           Start your day right with a delicious breakfast featuring our freshly baked brioche, perfect before heading to
           the beach.
         </p>
@@ -394,7 +393,7 @@
         <div class="swiper-slide slide">
           <h2 class="heading">client's review</h2>
           <i class="fas fa-quote-right"></i>
-          <p>"Absolutely loved our stay at this hotel! From the stylish decor to the friendly staff, everything was
+          <p id="client-review-1">"Absolutely loved our stay at this hotel! From the stylish decor to the friendly staff, everything was
             top-notch. The room was cozy and well-appointed, and the amenities exceeded our expectations. The location
             was ideal, with plenty of dining options nearby. Can't wait to come back!"</p>
           <div class="user">
@@ -415,7 +414,7 @@
         <div class="swiper-slide slide">
           <h2 class="heading">client's review</h2>
           <i class="fas fa-quote-right"></i>
-          <p>"Our stay at this hotel was fantastic! The staff were friendly and attentive, the room was clean and
+          <p id="client-review-2">"Our stay at this hotel was fantastic! The staff were friendly and attentive, the room was clean and
             comfortable, and the location was perfect. We especially loved the complimentary amenities like the free
             Wi-Fi and beach access. Highly recommend!"</p>
           <div class="user">
@@ -439,6 +438,7 @@
 
   </section>
 
+  <!-- 
   <section class="section__container news__container" id="news">
     <div class="news__header">
       <div>
@@ -489,6 +489,7 @@
       </div>
     </div>
   </section>
+  -->
 
   <!-- RESERVATION -->
   <section class="reservation" id="reservation">
@@ -497,52 +498,53 @@
         <div>
           <p class="section__subheader">Book Now</p>
           <h2 class="section__header">Check Availability</h2>
+          <p class="special_price" id="special-price">Contact us via email/telephone or complete the form to receive special prices!</p>
         </div>
 
         <form action="">
           <div class="container">
             <div class="box">
-              <p>Name <span>*</span></p>
-              <input type="text" class="input" placeholder="Your Name">
+              <p id="name-p">Name <span>*</span></p>
+              <input type="text" class="input" placeholder="Your Name" id="name">
             </div>
             <div class="box">
               <p>Email <span>*</span></p>
-              <input type="text" class="input" placeholder="Your Email">
+              <input type="text" class="input" placeholder="Your Email" id="email">
             </div>
             <div class="box">
               <p>Check In <span>*</span></p>
-              <input type="date" class="input">
+              <input type="date" class="input" id="check_in"  pattern="\d{4}-\d{2}-\d{2}">
             </div>
             <div class="box">
               <p>Check Out <span>*</span></p>
-              <input type="date" class="input">
+              <input type="date" class="input" id="check_out">
             </div>
             <div class="box">
-              <p>Adults <span>*</span></p>
-              <select name="adults" class="input">
-                <option value="1">1 Adults</option>
-                <option value="2">2 Adults</option>
-                <option value="3">3 Adults</option>
-                <option value="4">4 Adults</option>
-                <option value="5">5 Adults</option>
-                <option value="6">6 Adults</option>
+              <p id="adults-p">Adults <span>*</span></p>
+              <select name="adults" class="input" id="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
               </select>
             </div>
             <div class="box">
-              <p>Children <span>*</span></p>
-              <select name="child" class="input">
-                <option value="1">0 Child</option>
-                <option value="1">1 Child</option>
-                <option value="2">2 Child</option>
-                <option value="3">3 Child</option>
-                <option value="4">4 Child</option>
-                <option value="5">5 Child</option>
-                <option value="6">6 Child</option>
+              <p id="children-p">Children <span>*</span></p>
+              <select name="child" class="input" id="children">
+                <option value="1">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
               </select>
             </div>
             <div class="box">
-              <p>Rooms <span>*</span></p>
-              <select name="rooms" class="input">
+              <p id="rooms-p">Rooms <span>*</span></p>
+              <select name="rooms" class="input" id="number_of_rooms">
                 <option value="1">1 Rooms</option>
                 <option value="2">2 Rooms</option>
                 <option value="3">3 Rooms</option>
@@ -552,23 +554,26 @@
               </select>
             </div>
             <div class="box">
-              <p>Room Type <span>*</span></p>
-              <select name="type" class="input">
-                <option value="1">Deluxe Suite</option>
-                <option value="2">Family Suite</option>
-                <!-- 
-                <option value="3">Daily Rooms</option>
-                <option value="4">Panoramic Rooms</option>
-                -->
+              <p id="room-type-p">Room Type <span>*</span></p>
+              <select name="type" class="input" id="type_of_room">
+                <option value="Deluxe Suite">Deluxe Suite</option>
+                <option value="Family Suite">Family Suite</option>
               </select>
             </div>
+            
+            <div>
+              <label class="message__label" for="message">Message</label>
+              <textarea class="message__textarea" required cols="30" rows="10" placeholder="Other informations..." name="message"
+                id="message"></textarea>
+            </div>
+           
           </div>
-          <input type="submit" value="Check Availability" class="btn">
+          <a class="btn" onclick="return SendMail()">Check Availability</a>
+          <!-- <input type="submit" value="Check Availability" class="btn"> -->
         </form>
 
       </div>
     </div>
-
   </section>
 
 
@@ -584,6 +589,7 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.526923724342!2d19.462253476013284!3d40.463606471432115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134531f8ee51d651%3A0x2238359e482e4bd8!2sHotel%20Beke!5e0!3m2!1sen!2sit!4v1714224948138!5m2!1sen!2sit"
           style="border:0;" allowfullscreen="" loading="lazy"
+          width="90%" height="80%"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
         <!-- 
@@ -606,13 +612,16 @@
           <li>
             <a href="https://www.booking.com/Share-GIVH2h" target="_blank"><i class="ri-blogger-fill"></i></a>
           </li>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=3275846217" target="_blank"><i class="ri-whatsapp-line"></i></a>
+          </li>
         </ul>
       </div>
       <div class="footer__col">
         <h4>Services</h4>
         <div class="footer__links">
-          <li><a href="#">Online Booking</a></li>
-          <li><a href="#">Room Customization</a></li>
+          <li><a href="https://www.booking.com/Share-GIVH2h" id="online-booking">Online Booking</a></li>
+          <li><a href="#" id="room-customization">Room Customization</a></li>
           <li><a href="#">Virtual Tours</a></li>
           <li><a href="#">Special Offers</a></li>
           <li><a href="#">Concierge Services</a></li>
@@ -620,12 +629,12 @@
         </div>
       </div>
       <div class="footer__col">
-        <h4>Contact Us</h4>
+        <h4 id="contact-us">Contact Us</h4>
         <div class="footer__links">
           <li>
             <span><i class="ri-phone-fill"></i></span>
             <div>
-              <h5>Phone Number</h5>
+              <h5 id="phone-number">Phone Number</h5>
               <p>+355 69 696 6244</p>
             </div>
           </li>
@@ -639,7 +648,7 @@
           <li>
             <span><i class="ri-map-pin-2-fill"></i></span>
             <div>
-              <h5>Location</h5>
+              <h5 id="locationH">Location</h5>
               <p>Rruga Kanan Maze, Vlorë, Albania 9401
               </p>
             </div>
