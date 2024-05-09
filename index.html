@@ -11,14 +11,20 @@
 
   <link rel="stylesheet" href="styles.css" />
   <title>Hotel Beke</title>
+
+  <meta name="description"
+    content="Experience a relaxing beachfront vacation at our hotel in Vlore, Albania. Enjoy stunning sea views, comfortable accommodations, and top-notch amenities. Book your stay now!">
+
+  <meta name="keywords" content="hotel in Vlore, beachfront hotel, Vlore Albania accommodations, seaside hotel Vlore, forest Vlore">
+
   <link rel="icon" type="image/x-icon" href="./assets/logo1.png">
 
   <!-- EMAIL JS -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
-      (function() {
-          emailjs.init('MO7xvIDqV4CWzWXZY');
-      })();
+    (function () {
+      emailjs.init('MO7xvIDqV4CWzWXZY');
+    })();
   </script>
 </head>
 
@@ -105,7 +111,8 @@
         <div class="about__card">
           <span><i class="ri-calendar-check-line"></i></span>
           <h4 id="luxury-accomodation">Luxury Accommodation</h4>
-          <p id="luxury-accomodation-p">Indulge in unrivaled luxury at our exquisite accommodations, designed to elevate your stay to new heights
+          <p id="luxury-accomodation-p">Indulge in unrivaled luxury at our exquisite accommodations, designed to elevate
+            your stay to new heights
             of comfort and style.</p>
         </div>
       </div>
@@ -136,7 +143,8 @@
         <div class="room__card__details">
           <div>
             <h4 id="deluxe-suits">Deluxe Suite</h4>
-            <p id="deluxe-suits-p">Indulge in our well-appointed Deluxe Suites, designed for guests seeking refined luxury and comfort.</p>
+            <p id="deluxe-suits-p">Indulge in our well-appointed Deluxe Suites, designed for guests seeking refined
+              luxury and comfort.</p>
           </div>
           <!-- <h3>€50 - €70<span>/night</span></h3> -->
         </div>
@@ -146,7 +154,8 @@
         <div class="room__card__details">
           <div>
             <h4 id="family-suite">Family Suite</h4>
-            <p id="family-suite-p">Our spacious Family Suite features three comfortable beds, ideal for families or groups looking for a
+            <p id="family-suite-p">Our spacious Family Suite features three comfortable beds, ideal for families or
+              groups looking for a
               larger room to accommodate multiple guests. Enjoy ample space and comfort during your stay in our Family
               Suite.</p>
           </div>
@@ -186,7 +195,8 @@
       </div>
       <div class="intro__video">
         <video class="video-bg" autoplay muted loop>
-          <source src="https://github.com/beke-hotel/hotel-beke/blob/main/assets/hotel-beke.mp4?raw=true" type="video/mp4">
+          <source src="https://github.com/beke-hotel/hotel-beke/blob/main/assets/hotel-beke.mp4?raw=true"
+            type="video/mp4">
           <!-- <source src="./assets/hotel-beke.mp4" type="video/mp4"> -->
           Your browser does not support the video tag.
         </video>
@@ -264,9 +274,9 @@
       <div class="feature__card">
         <img src="assets/service6.png" alt="">
         <h4 id="private-beach">Private Beach Access</h4>
-          <p id="private-beach-p">
-            Enjoy access to our private beach during your stay.
-          </p>
+        <p id="private-beach-p">
+          Enjoy access to our private beach during your stay.
+        </p>
       </div>
       <div class="feature__card">
         <img src="assets/service2.png" alt="">
@@ -393,7 +403,8 @@
         <div class="swiper-slide slide">
           <h2 class="heading">client's review</h2>
           <i class="fas fa-quote-right"></i>
-          <p id="client-review-1">"Absolutely loved our stay at this hotel! From the stylish decor to the friendly staff, everything was
+          <p id="client-review-1">"Absolutely loved our stay at this hotel! From the stylish decor to the friendly
+            staff, everything was
             top-notch. The room was cozy and well-appointed, and the amenities exceeded our expectations. The location
             was ideal, with plenty of dining options nearby. Can't wait to come back!"</p>
           <div class="user">
@@ -414,7 +425,8 @@
         <div class="swiper-slide slide">
           <h2 class="heading">client's review</h2>
           <i class="fas fa-quote-right"></i>
-          <p id="client-review-2">"Our stay at this hotel was fantastic! The staff were friendly and attentive, the room was clean and
+          <p id="client-review-2">"Our stay at this hotel was fantastic! The staff were friendly and attentive, the room
+            was clean and
             comfortable, and the location was perfect. We especially loved the complimentary amenities like the free
             Wi-Fi and beach access. Highly recommend!"</p>
           <div class="user">
@@ -498,7 +510,8 @@
         <div>
           <p class="section__subheader">Book Now</p>
           <h2 class="section__header">Check Availability</h2>
-          <p class="special_price" id="special-price">Contact us via email/telephone or complete the form to receive special prices!</p>
+          <p class="special_price" id="special-price">Contact us via email/telephone or complete the form to receive
+            special prices!</p>
         </div>
 
         <form action="">
@@ -513,7 +526,7 @@
             </div>
             <div class="box">
               <p>Check In <span>*</span></p>
-              <input type="date" class="input" id="check_in"  pattern="\d{4}-\d{2}-\d{2}">
+              <input type="date" class="input" id="check_in" pattern="\d{4}-\d{2}-\d{2}">
             </div>
             <div class="box">
               <p>Check Out <span>*</span></p>
@@ -560,13 +573,13 @@
                 <option value="Family Suite">Family Suite</option>
               </select>
             </div>
-            
+
             <div>
               <label class="message__label" for="message">Message</label>
-              <textarea class="message__textarea" required cols="30" rows="10" placeholder="Other informations..." name="message"
-                id="message"></textarea>
+              <textarea class="message__textarea" required cols="30" rows="10" placeholder="Other informations..."
+                name="message" id="message"></textarea>
             </div>
-           
+
           </div>
           <a class="btn" onclick="return SendMail()">Check Availability</a>
           <!-- <input type="submit" value="Check Availability" class="btn"> -->
@@ -588,8 +601,7 @@
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.526923724342!2d19.462253476013284!3d40.463606471432115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134531f8ee51d651%3A0x2238359e482e4bd8!2sHotel%20Beke!5e0!3m2!1sen!2sit!4v1714224948138!5m2!1sen!2sit"
-          style="border:0;" allowfullscreen="" loading="lazy"
-          width="90%" height="80%"
+          style="border:0;" allowfullscreen="" loading="lazy" width="90%" height="80%"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
         <!-- 
@@ -613,7 +625,8 @@
             <a href="https://www.booking.com/Share-GIVH2h" target="_blank"><i class="ri-blogger-fill"></i></a>
           </li>
           <li>
-            <a href="https://api.whatsapp.com/send?phone=3275846217" target="_blank"><i class="ri-whatsapp-line"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=3275846217" target="_blank"><i
+                class="ri-whatsapp-line"></i></a>
           </li>
         </ul>
       </div>
