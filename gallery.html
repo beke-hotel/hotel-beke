@@ -79,60 +79,60 @@
           </div>
           <span>HOTEL<br />BEKE</span>
         </div>
-
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.526923724342!2d19.462253476013284!3d40.463606471432115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134531f8ee51d651%3A0x2238359e482e4bd8!2sHotel%20Beke!5e0!3m2!1sen!2sit!4v1714224948138!5m2!1sen!2sit"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          style="border:0;" allowfullscreen="" loading="lazy" width="90%" height="80%"
+          referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-
         <ul class="footer__socials">
-          <li>
-            <a href="#"><i class="ri-youtube-fill"></i></a>
-          </li>
           <li>
             <a href="https://www.instagram.com/hotel_beke/" target="_blank"><i class="ri-instagram-line"></i></a>
           </li>
           <li>
-            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="https://www.booking.com/Share-GIVH2h" target="_blank"><i class="ri-blogger-fill"></i></a>
           </li>
           <li>
-            <a href="https://www.booking.com/Share-GIVH2h" target="_blank"><i class="ri-blogger-fill"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=3275846217" target="_blank"><i
+                class="ri-whatsapp-line"></i></a>
           </li>
         </ul>
       </div>
       <div class="footer__col">
         <h4>Services</h4>
         <div class="footer__links">
-          <li><a href="#">Online Booking</a></li>
-          <li><a href="#">Room Customization</a></li>
-          <li><a href="#">Virtual Tours</a></li>
-          <li><a href="#">Special Offers</a></li>
-          <li><a href="#">Concierge Services</a></li>
-          <li><a href="#">Customer Support</a></li>
+          <li><a href="https://www.booking.com/Share-GIVH2h" id="online-booking">Online Booking</a></li>
+          <li>
+            <p id="bank-transfer">IBAN: AL89 2121 1009 0000 0000 0177 8411</p>
+          </li>
+          <li><a href="#" id="room-customization">Room Customization</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=3275846217" target="_blank">Virtual Tours</a></li>
+          <li><a href="#reservation">Special Offers</a></li>
+          <li><a href="#services">Concierge Services</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=3275846217" target="_blank">Customer Support</a></li>
         </div>
       </div>
       <div class="footer__col">
-        <h4>Contact Us</h4>
+        <h4 id="contact-us">Contact Us</h4>
         <div class="footer__links">
           <li>
             <span><i class="ri-phone-fill"></i></span>
             <div>
-              <h5>Phone Number</h5>
-              <p>+355 69 696 6244</p>
+              <h5 id="phone-number">Phone Number</h5>
+              <a href="tel:+355696966244">+355 69 696 6244</a>
             </div>
           </li>
           <li>
             <span><i class="ri-record-mail-line"></i></span>
             <div>
               <h5>Email</h5>
-              <p>hotelbeke@gmail.com</p>
+              <a href="mailto:hotelbeke@gmail.com">hotelbeke@gmail.com</a>
             </div>
           </li>
           <li>
             <span><i class="ri-map-pin-2-fill"></i></span>
             <div>
-              <h5>Location</h5>
-              <p>Rruga Kanan Maze, Vlorë, Albania 9401
+              <h5 id="locationH">Location</h5>
+              <p>Rruga Sazani, Vlorë, Albania 9401
               </p>
             </div>
           </li>
@@ -144,13 +144,12 @@
     </div>
   </footer>
 
-
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const galleryGrid = document.getElementById('gallery');
 
       const startNumber = 3;
-      const endNumber = 166;
+      const endNumber = 190;
       const imageFiles = [];
 
       for (let i = startNumber; i <= endNumber; i++) {
