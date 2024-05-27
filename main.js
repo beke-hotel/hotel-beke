@@ -122,7 +122,24 @@ function SendMail() {
 
   })
 }
+// fine
 
+/* CONTACT FUNCTION */
+document.getElementById('contact-link').addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent the default action
+
+  // Create a dialog to ask the user for their choice
+  const userChoice = confirm("Would you like to call or message on WhatsApp?\nPress OK to call, Cancel to use WhatsApp.");
+
+  if (userChoice) {
+    // User chose to call
+    window.location.href = 'tel:+355696966244';
+  } else {
+    // User chose WhatsApp
+    window.location.href = 'https://api.whatsapp.com/send?phone=355696966244';
+  }
+});
+// fine
 
 
 
