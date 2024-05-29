@@ -210,7 +210,7 @@ const translations = {
                     comfortable, and the location was perfect. We especially loved the complimentary amenities like the free
                     Wi-Fi and beach access. Highly recommend!`,
 
-    specialPrice: "Contact us via email/telephone or complete the form to receive special prices!",
+    specialPrice: "Contact us via email/telephone or complete the form to get 8% discount!",
     nameP: "Name ",
     adultsP: "Adults ",
     childrenP: "Children ",
@@ -282,7 +282,7 @@ const translations = {
     clientReview2: `Il nostro soggiorno in questo hotel è stato fantastico! Il personale era cordiale e attento, la camera era pulita e
                        confortevole, e la posizione era perfetta. Abbiamo apprezzato particolarmente i servizi gratuiti come il Wi-Fi e l'accesso alla spiaggia. Altamente raccomandato!`,
 
-    specialPrice: "Contattaci via email/telefono o compila il modulo per ricevere prezzi speciali!",
+    specialPrice: "Contattaci via email/telefono o compila il modulo per ottenere uno sconto dell'8%!",
     nameP: "Nome",
     adultsP: "Adulti",
     childrenP: "Bambini",
@@ -350,7 +350,7 @@ const translations = {
     clientReview1: `Na pëlqeu shumë qëndrimi ynë në këtë hotel! Nga dekori i stilizuar deri te stafi miqësor, gjithçka ishte shumë e mirë. Dhomat ishin të ngrohta dhe të mirë të pajisura, ndërsa shërbimet kaluan pritshmëritë tona. Vendndodhja ishte ideale, me shumë mundësi për të ngrënë në afërsi. Nuk presim të kthehemi!`,
     clientReview2: `Qëndrimi ynë në këtë hotel ishte fantastik! Stafi ishte miqësor dhe i vëmendshëm, dhoma ishte e pastër dhe e rehatshme, ndërsa vendndodhja ishte perfekte. Ne veçanërisht pëlqeu shërbimet e falshme si Wi-Fi falas dhe qasja në plazh. E rekomandojmë me ngulm!`,
 
-    specialPrice: "Na kontaktoni përmes emailit/telefonit ose plotësoni formularin për të marrë çmimet speciale!",
+    specialPrice: "Na kontaktoni me email/telefon ose plotësoni formularin për të marrë një ulje prej 8%!",
     nameP: "Emri ",
     adultsP: "Të rritur ",
     childrenP: "Fëmijë ",
