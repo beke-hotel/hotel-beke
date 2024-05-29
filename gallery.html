@@ -144,6 +144,64 @@
     </div>
   </footer>
 
+  <!--
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const galleryGrid = document.getElementById('gallery');
+  
+      const startNumber = 3;
+      const endNumber = 190;
+      const photosPerLoad = 10; // Number of photos to load per batch
+      let currentIndex = startNumber;
+  
+      const loadPhotos = () => {
+        const nextIndex = Math.min(currentIndex + photosPerLoad, endNumber + 1);
+        for (let i = currentIndex; i < nextIndex; i++) {
+          const fileName = `photo-${i}.jpg`;
+  
+          const galleryCard = document.createElement('div');
+          galleryCard.className = 'gallery__card';
+  
+          const img = document.createElement('img');
+          img.src = `./album/${fileName}`;
+          img.alt = 'room';
+  
+          galleryCard.appendChild(img);
+          galleryGrid.appendChild(galleryCard);
+        }
+        currentIndex = nextIndex;
+      };
+  
+      // Load initial photos
+      loadPhotos();
+  
+      window.addEventListener('scroll', () => {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100) {
+          if (currentIndex <= endNumber) {
+            loadPhotos();
+          }
+        }
+      });
+    });
+  
+    const menuBtn = document.getElementById("menu-btn");
+    const navLinks = document.getElementById("nav-links");
+    const menuBtnIcon = menuBtn.querySelector("i");
+  
+    menuBtn.addEventListener("click", (e) => {
+      navLinks.classList.toggle("open");
+  
+      const isOpen = navLinks.classList.contains("open");
+      menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+    });
+  
+    navLinks.addEventListener("click", (e) => {
+      navLinks.classList.remove("open");
+      menuBtnIcon.setAttribute("class", "ri-menu-line");
+    });
+  </script>
+  -->
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const galleryGrid = document.getElementById('gallery');

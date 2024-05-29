@@ -234,7 +234,65 @@ const translations = {
     strongTeam: "La Nostra Squadra",
     strongTeamP: "Sblocca l'eccellenza dell'ospitalità e garantisce il tuo soggiorno perfetto",
 
+    luxuryAccomodation: "Sistemazioni di Lusso",
+    luxuryAccomodationP: "Concediti un lusso ineguagliabile nelle nostre squisite sistemazioni, progettate per elevare il tuo soggiorno a nuovi livelli di comfort e stile.",
+    exploreOurLocation: "Esplora la Nostra Posizione",
+    exploreOurLocationP: `Benvenuti all'Hotel Beke, situato idealmente a soli 250 metri dalla Spiaggia di Valona nella pittoresca città di Valona. Il nostro
+                           Hotel a 4 stelle offre sistemazioni confortevoli con la comodità di un parcheggio privato gratuito.
+                           Gli ospiti che soggiornano all'Hotel Beke possono usufruire del nostro bar aperto 24 ore su 24 e della zona spiaggia esclusiva durante tutto il loro
+                           soggiorno. Immerso in un ambiente naturale sereno, il nostro hotel vanta una vista mozzafiato, rendendolo il rifugio perfetto per il relax e la tranquillità.
+                           Vivi la bellezza di Valona dal comfort dell'Hotel Beke, dove la natura incontra l'ospitalità.`,
+    exclusiveRoomChoices: "Scelte di Camere Esclusive",
+    deluxeSuit: "Suite Deluxe",
+    deluxeSuitP: "Concediti il lusso e il comfort raffinato delle nostre Suite Deluxe, progettate per gli ospiti che cercano il massimo del comfort.",
+    familySuit: "Suite Familiare",
+    familySuitP: `La nostra spaziosa Suite Familiare dispone di tre letti confortevoli, ideale per famiglie o gruppi che cercano una
+                    stanza più grande per ospitare più persone. Goditi ampio spazio e comfort durante il tuo soggiorno nella nostra Suite Familiare.`,
+    introDiscover: "Scopri la Nostra Destinazione di Lusso",
+    introDiscoverP: `Che tu stia cercando un rifugio intimo ed esclusivo o un'avventura affascinante, l'Hotel Beke promette un'esperienza indimenticabile dove il comfort
+                       e l'emozione convergono per creare ricordi duraturi.`,
 
+    services: "SERVIZI",
+    coreFeatures: "Caratteristiche Principali",
+    topRated: "Molto Apprezzato dai Nostri Ospiti",
+    topRateP: "Orgogliosi di essere costantemente valutati altamente dai nostri preziosi ospiti, riflettendo il nostro impegno per un servizio eccezionale e la soddisfazione degli ospiti.",
+    quiteHours: "Ore di Silenzio",
+    quiteHoursP: "All'Hotel Beke, diamo priorità alla pace e al riposo ininterrotto per garantire un'esperienza rigenerante ai nostri ospiti.",
+    primeLocation: "Posizione Strategica",
+    primeLocationP: "Sperimenta una comodità impareggiabile all'Hotel Beke, situato strategicamente in una delle località più ambite e ricercate.",
+    freeCancellation: "Cancellazione Gratuita",
+    freeCancellationP: "Goditi la tranquillità sapendo che offriamo la flessibilità della cancellazione gratuita, riconoscendo che i piani di viaggio possono cambiare improvvisamente.",
+    freeWifi: "Wi-Fi Gratuito",
+    freeWifiP: "Rimani connesso con il Wi-Fi gratuito disponibile in tutta la nostra struttura.",
+    specialOffers: "Offerte Speciali",
+    specialOffersP: `Scopri le nostre esclusive offerte speciali pensate per migliorare ogni occasione, che tu stia pianificando una fuga romantica
+                       o un viaggio d'affari produttivo.`,
+    contServ: "Servizio 24/7",
+    contServP: "Il nostro team dedicato è disponibile 24 ore su 24 per soddisfare le tue esigenze, garantendo un servizio eccezionale in qualsiasi momento.",
+    freeParking: "Parcheggio Gratuito",
+    freeParkingP: "Goditi la comodità del parcheggio gratuito disponibile in ogni momento durante il tuo soggiorno.",
+    privateBeach: "Accesso alla Spiaggia Privata",
+    privateBeachP: "Goditi l'accesso alla nostra spiaggia privata durante il tuo soggiorno.",
+    breakfastIncluded: "Colazione Inclusa",
+    breakfastIncludedP: "Inizia la giornata con una deliziosa colazione con le nostre brioche appena sfornate, perfetta prima di andare in spiaggia.",
+
+    clientReview1: `Abbiamo adorato il nostro soggiorno in questo hotel! Dall'arredamento elegante al personale cordiale, tutto era
+                       di prim'ordine. La camera era accogliente e ben arredata, e i servizi hanno superato le nostre aspettative. La posizione
+                       era ideale, con molte opzioni di ristorazione nelle vicinanze. Non vediamo l'ora di tornare!`,
+    clientReview2: `Il nostro soggiorno in questo hotel è stato fantastico! Il personale era cordiale e attento, la camera era pulita e
+                       confortevole, e la posizione era perfetta. Abbiamo apprezzato particolarmente i servizi gratuiti come il Wi-Fi e l'accesso alla spiaggia. Altamente raccomandato!`,
+
+    specialPrice: "Contattaci via email/telefono o compila il modulo per ricevere prezzi speciali!",
+    nameP: "Nome",
+    adultsP: "Adulti",
+    childrenP: "Bambini",
+    roomsP: "Camere",
+    roomTypeP: "Tipologia di Camera",
+
+    contactUs: "Contattaci",
+    onlineBooking: "Prenotazione Online",
+    phoneNumber: "Numero di Telefono",
+    locationH: "Posizione"
 
   },
   al: {
@@ -395,6 +453,57 @@ const setLanguage = (language) => {
     title.innerText = translations.it.title;
     strongTeam.innerText = translations.it.strongTeam;
     strongTeamP.innerText = translations.it.strongTeamP;
+
+    luxuryAccomodation.innerText = translations.it.luxuryAccomodation;
+    luxuryAccomodationP.innerText = translations.it.luxuryAccomodationP;
+    exploreOurLocation.innerText = translations.it.exploreOurLocation;
+    exploreOurLocationP.innerText = translations.it.exploreOurLocationP;
+
+    exclusiveRoomChoices.innerText = translations.it.exclusiveRoomChoices;
+    deluxeSuit.innerText = translations.it.deluxeSuit;
+    deluxeSuitP.innerText = translations.it.deluxeSuitP;
+    familySuit.innerText = translations.it.familySuit;
+    familySuitP.innerText = translations.it.familySuitP;
+    introDiscover.innerText = translations.it.introDiscover;
+    introDiscoverP.innerText = translations.it.introDiscoverP;
+
+    services.innerText = translations.it.services;
+    coreFeatures.innerText = translations.it.coreFeatures;
+    topRated.innerText = translations.it.topRated;
+    topRateP.innerText = translations.it.topRateP;
+    quiteHours.innerText = translations.it.quiteHours;
+    quiteHoursP.innerText = translations.it.quiteHoursP;
+    primeLocation.innerText = translations.it.primeLocation;
+    primeLocationP.innerText = translations.it.primeLocationP;
+    freeCancellation.innerText = translations.it.freeCancellation;
+    freeCancellationP.innerText = translations.it.freeCancellationP;
+    freeWifi.innerText = translations.it.freeWifi;
+    freeWifiP.innerText = translations.it.freeWifiP;
+    specialOffers.innerText = translations.it.specialOffers;
+    specialOffersP.innerText = translations.it.specialOffersP;
+    contServ.innerText = translations.it.contServ;
+    contServP.innerText = translations.it.contServP;
+    freeParking.innerText = translations.it.freeParking;
+    freeParkingP.innerText = translations.it.freeParkingP;
+    privateBeach.innerText = translations.it.privateBeach;
+    privateBeachP.innerText = translations.it.privateBeachP;
+    breakfastIncluded.innerText = translations.it.breakfastIncluded;
+    breakfastIncludedP.innerText = translations.it.breakfastIncludedP;
+
+    clientReview1.innerText = translations.it.clientReview1;
+    clientReview2.innerText = translations.it.clientReview2;
+
+    specialPrice.innerText = translations.it.specialPrice;
+    nameP.innerText = translations.it.nameP;
+    adultsP.innerText = translations.it.adultsP;
+    childrenP.innerText = translations.it.childrenP;
+    roomsP.innerText = translations.it.roomsP;
+    roomTypeP.innerText = translations.it.roomTypeP;
+
+    contactUs.innerText = translations.it.contactUs;
+    onlineBooking.innerText = translations.it.onlineBooking;
+    phoneNumber.innerText = translations.it.phoneNumber;
+    locationH.innerText = translations.it.locationH;
   } else if (language == "en") {
     navHome.innerText = translations.en.navHome;
     navAbout.innerText = translations.en.navAbout;
